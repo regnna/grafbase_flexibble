@@ -141,9 +141,9 @@ const [form,setForm]=useState({
 
 />
 
-{/* CustomeInput Category... */}
+{/* CustomeInput category... */}
 <CustomMenu
-  title='Category'
+  title='category'
   state={form.category}
   filters={categoryFilters}
   setState={(value)=>handleStateChange('category',value)}
