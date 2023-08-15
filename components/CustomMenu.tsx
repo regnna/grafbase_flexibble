@@ -20,7 +20,7 @@ const CustomMenu = ({title,state,filters,setState}:Props) => {
             <Menu as="div" className="self-start relative">
                 <div>
                     <Menu.Button className="flexCenter custom_menu-btn">
-                        {state || "select a catergory"}
+                        {state || "select a category"}
                         <Image
                             src='/arrow-down.svg'
                             width={10}

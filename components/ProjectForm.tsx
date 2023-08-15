@@ -3,7 +3,7 @@ import { ProjectInterface, SessionInterface } from "@/common.types"
 import Image from "next/image"
 import { ChangeEvent, useState } from "react"
 import FormField from "./FormField"
-import { catergoryFilters } from '@/constant';
+import { categoryFilters } from '@/constant';
 import CustomMenu from "./CustomMenu"
 import Button from "./Button"
 import { createNewProject, fetchToken, updateProject } from "@/lib/actions"
@@ -79,7 +79,7 @@ const [form,setForm]=useState({
     image: project?.image || '',
     liveSiteUrl : project?.liveSiteUrl  || '',
     githubUrl: project?.githubUrl || '',
-    catergory: project?.catergory || '',
+    category: project?.category || '',
 })
     // const image=null;
   return (
@@ -141,12 +141,12 @@ const [form,setForm]=useState({
 
 />
 
-{/* CustomeInput catergory... */}
+{/* CustomeInput category... */}
 <CustomMenu
-  title='catergory'
-  state={form.catergory}
-  filters={catergoryFilters}
-  setState={(value)=>handleStateChange('catergory',value)}
+  title='category'
+  state={form.category}
+  filters={categoryFilters}
+  setState={(value)=>handleStateChange('category',value)}
 
 />
 <div className="flexStart w-full">

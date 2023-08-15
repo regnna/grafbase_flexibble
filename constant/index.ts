@@ -6,7 +6,7 @@ export const NavLinks = [
     { href: '/', key: 'Hire Developers', text: 'Hire Developers' }
   ];
   
-  export const catergoryFilters = [
+  export const categoryFilters = [
     "Frontend",
     "Backend",
     "Full-Stack",

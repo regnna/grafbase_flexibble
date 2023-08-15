@@ -37,9 +37,9 @@ const page = async({params:{id}}:{params:{id:string}}) => {
       <div className='flex flex-row gap-3'>
         <Link className='text-slate-600' href={`/profile/${result?.project?.createdBy?.id}`}>{result?.project?.createdBy?.name}</Link>
       {/* <h2 className='text-slate-600' > {result?.project?.createdBy?.name}   </h2> */}
-        {result?.project?.catergory &&(
-          <Link href={`/?catergory=${result?.project?.catergory}`} className='text-purple-400'>{result?.project?.catergory}</Link>
-          // <h2 className='text-blue-500'>{result?.project?.catergory}</h2>
+        {result?.project?.category &&(
+          <Link href={`/?category=${result?.project?.category}`} className='text-purple-400'>{result?.project?.category}</Link>
+          // <h2 className='text-blue-500'>{result?.project?.category}</h2>
         )}
       </div>
       </div>
