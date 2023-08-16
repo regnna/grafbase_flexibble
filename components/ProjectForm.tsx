@@ -28,7 +28,7 @@ const ProjectForm = ({type,session,project}:Props) => {
       const {token}= await fetchToken()
       try{
         if(type==='create'){
-          console.log(session?.user?.id);
+          // console.log(session?.user?.id);
 
           await createNewProject(form,session?.user?.id,token)
 

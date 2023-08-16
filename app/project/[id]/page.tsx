@@ -14,7 +14,7 @@ const page = async({params:{id}}:{params:{id:string}}) => {
     if (!result?.project){
         <p>Failed to fetch project information</p>
     }
-    console.log(result?.project)
+    // console.log(result?.project)
   return ( 
     <Modal >
     

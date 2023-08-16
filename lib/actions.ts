@@ -73,7 +73,7 @@ export const createNewProject=async(form:ProjectForm,creatorId:string,token:stri
                 }
             }
         }
-    console.log(variables.input.createdBy)
+    // console.log(variables.input.createdBy)
 
         return makeGraphQLRequest(createProjectMutation,variables)
     }
