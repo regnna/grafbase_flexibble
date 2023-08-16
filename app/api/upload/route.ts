@@ -7,12 +7,12 @@ cloudinary.config({
   api_key: process.env.CLOUDINARY_KEY, 
   api_secret: process.env.CLOUDINARY_SECRET, 
 });
-export async function GET(){
-    return NextResponse.json(
-        {mesage: 'Hello from Upload'},
-        {status:200}
-    )
-}
+// export async function GET(){
+//     return NextResponse.json(
+//         {mesage: 'Hello from Upload'},
+//         {status:200}
+//     )
+// }
 
 export async function POST(request: Request) {
     const { path } = await request.json();
